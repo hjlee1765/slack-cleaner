@@ -1,0 +1,10 @@
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\DelSlack.exe.config
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\DelSlack.exe
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\DelSlack.pdb
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\Newtonsoft.Json.dll
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\System.Net.Http.Formatting.dll
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\Newtonsoft.Json.xml
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\bin\Debug\System.Net.Http.Formatting.xml
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\obj\Debug\DelSlack.exe
+c:\users\hyungjlee\documents\visual studio 2015\Projects\DelSlack\DelSlack\obj\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\obj\Debug\DelSlack.csprojResolveAssemblyReference.cache

@@ -1,0 +1,29 @@
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\DelSlack.exe.config
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\DelSlack.exe
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\obj\Debug\DelSlack.exe
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\DelSlack\DelSlack\obj\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\DelSlack.exe.config
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\obj\Debug\DelSlack.exe
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\obj\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\DelSlack.exe
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\hyungjlee\Documents\Visual Studio 2015\Projects\slack-cleaner\slack-cleaner\obj\Debug\slack-cleaner.csprojResolveAssemblyReference.cache
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\DelSlack.exe.config
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\obj\Debug\DelSlack.exe
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\obj\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\DelSlack.exe
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\DelSlack.pdb
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\Newtonsoft.Json.dll
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\Newtonsoft.Json.xml
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\hyungjlee\Documents\slack-cleaner\slack-cleaner\slack-cleaner\obj\Debug\slack-cleaner.csprojResolveAssemblyReference.cache
