@@ -32,6 +32,7 @@ public class MsgHistroyRes
 {
 	public bool ok { get; set; }
 	public List<MsgRes> messages { get; set; }
+	public bool has_more { get; set; }
 }
 
 public class MsgRes
@@ -135,13 +136,13 @@ class Program
 	{
 		string token = args[0];
 		string channel = args[1];
-		string count = args[2];
+		string searchCount = args[2];
 		string userId = args[3];
 
-		RunAsync(token, channel, count, userId).GetAwaiter().GetResult();
+		RunAsync(token, channel, searchCount, userId).GetAwaiter().GetResult();
 	}
 
-	static async Task RunAsync(string token, string channel, string count, string userId)
+	static async Task RunAsync(string token, string channel, string searchCount, string userId)
 	{
 
 		// Update port # in the following line.
@@ -150,29 +151,48 @@ class Program
 		client.DefaultRequestHeaders.Accept.Add(
 			new MediaTypeWithQualityHeaderValue("application/json"));
 
+		//Int32 unixTimestamp = (Int32)(DateTime.UtcNow.Subtract(new DateTime(2018, 10, 11))).TotalSeconds;
 
 
+		//long unixTime = ((DateTimeOffset)foo).ToUnixTimeSeconds();
+
+		List<Task<DelRes>> tasks = new List<Task<DelRes>>();
 
 		try
 		{
 			MsgHistroyRes res = new MsgHistroyRes();
-			List<Task<DelRes>> tasks = new List<Task<DelRes>>();
+			List<MsgRes> msgRes = new List<MsgRes>();
 			var delResList = new List<DelRes>();
 			//Task<List<DelRes>> delRes;
 
+			bool flag = true;
+			Console.WriteLine("1. 프로그램 시작");
 
-				
-			res = await GetMsgHistoryAsync("api/channels.history?token=" + token + "&channel=" + channel +"&count=" + count);
+			//res = await GetMsgHistoryAsync("api/channels.history?token=" + token + "&channel=" + channel +"&count=" + count);
 
-			// private 채널은 groups.history API를 이용해서 삭제해야함.
-			if (res.ok.Equals(false))
-			{
-				res = await GetMsgHistoryAsync("api/groups.history?token=" + token + "&channel=" + channel + "&count=" + count);
+			string lastTs = null;
+
+			while(msgRes.Count < 10000 && flag)
+			{				
+				// private 채널은 groups.history API를 이용해서 삭제해야함.
+				var temp = await GetMsgHistoryAsync("api/groups.history?token=" + token + "&channel=" + channel + "&count=1000&latest=" + lastTs);
+				msgRes.AddRange(temp.messages);
+				if (temp.has_more.Equals(false))
+				{
+					flag = false;
+				}
+				else
+				{
+					lastTs = temp.messages.Last().ts;
+				}
 			}
 
-			var resMsgList = res.messages.Where(x => x.user == userId).ToList();
+			Console.WriteLine("2. 조회결과 - 총 {0} 개 입니다.", msgRes.Count);
 
-			//Console.WriteLine("Count : {0}", resMsgList.Count);
+			var resMsgList = msgRes.Where(x => x.user == userId).ToList();
+
+			Console.WriteLine("3. 삭제대상 - 총 {0} 개 입니다.", resMsgList.Count);
+
 
 			foreach (var resMsg in resMsgList)
 			{
@@ -181,7 +201,10 @@ class Program
 
 			Task.WaitAll(tasks.ToArray());
 			foreach (Task t in tasks)
-				Console.WriteLine("Task {0} Status: {1}", t.Id, t.Status);
+			{
+				Console.WriteLine("...");
+				//Console.WriteLine("Task {0} Status: {1}", t.Id, t.Status);
+			}
 
 
 		}
@@ -190,6 +213,7 @@ class Program
 			Console.WriteLine(e.Message);
 		}
 
+		Console.WriteLine("4. 프로그램 종료 - 총 {0} 개 삭제되었습니다.", tasks.Count);
 		Console.ReadLine();
 	}
 }
